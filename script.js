@@ -53,21 +53,3 @@ function toggleReadMore(paragraphId, event) {
       readMore.textContent = 'Read Less ...';
   }
 }
-
-
-
-// function toggleReadMore() {
-//   const readMore = document.getElementById('readMore');
-//   const hiddenParagraph = readMore.parentElement.querySelector('#hiddenParagraph');
-
-  
-//   // Toggle the 'hidden' class on the hidden paragraph
-//   hiddenParagraph.classList.toggle('hidden');
-  
-//   // Update the "Read More" text to "Read Less" and vice versa
-//   if (hiddenParagraph.classList.contains('hidden')) {
-//       readMore.textContent = 'Read More ...';
-//   } else {
-//       readMore.textContent = 'Read Less ...';
-//   }
-// }
