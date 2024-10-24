@@ -62,16 +62,16 @@
 
     <!--home section-->
     <section>
-        <div><img id="home-img" src="imgs/header.jpg" alt=""
-                class="w-screen h-screen object-cover pt-10 brightness-50 z-0 "> </div>
+        <div><img id="home-img" src="imgs/header.jpg" alt="" class="w-screen h-screen object-cover brightness-50 z-0 ">
+        </div>
 
-        <div class="z-10 flex text-center flex-col justify-center inset-0 absolute mt-32">
+        <div class="z-10 text-center inset-0 absolute mt-72">
             <div>
-                <p id="text" class="text-5xl text-white">Small Team With Big Ideas</p>
-                <h1 id="othertext" class="text-9xl  text-white">Visionary Creations</h1>
+                <p id="text" class="text-xl text-white lg:text-5xl">Small Team With Big Ideas</p>
+                <h1 id="othertext" class="text-4xl text-white lg:text-9xl">Visionary Creations</h1>
             </div>
 
-            <div class="mt-20  text-white">
+            <div class="mt-20  text-white space-y-2">
                 <button href="#"
                     class="border rounded-full text-lg border-[#FF214F] bg-[#FF214F] px-8 py-3 hover:bg-transparent">Our
                     Services</button>
@@ -79,31 +79,42 @@
             </div>
         </div>
 
-        <div id="services-container" class="flex justify-center absolute bottom-[-130px] h-60" style="width: 100%;">
-            <div id="serv-content" class="bg-white w-8/12 flex shadow-2xl -inset-5 -mt-30 rounded-md">
-                <div id="contain" class=" ml-2 mr-2 pt-4 text-center pr-5 border-r-2">
+        <div id="services-container" class=" h-60 flex justify-center mt-6 " style="width: 100%;">
+            <div id="serv-content"
+                class="bg-white grid col-span-1 row-auto md:grid-cols-3 md:absolute md:-bottom-28  md:shadow-xl md:w-11/12 lg:w-7/12 lg:flex lg:justify-between">
+                <div id="contain"
+                    class=" mt-8 text-center border border-[#EAF0FC] w-72 md:w-52 lg:w-80  rounded-md md:text-sm md:border-y-0 md:border-x-0 md:rounded-none md:mt-0 mx-2 md:ml-2   md:h-56">
                     <div id="serv-imgs" class="flex justify-center mt-4 mb-4"><img src="imgs/vector.png" alt=""
-                            width="50"></div>
-                    <div id="serv-title" class="flex justify-center mb-4 font-bold text-[#495057]">UX/UI DESIGN</div>
-                    <div id="serv-text" class="text-base text-[#495057]">Lorem ipsum dolor, sit amet consectetur
+                            width="50" class="md:w-10 lg:w-12"></div>
+                    <div id="serv-title" class="flex justify-center mb-4 font-bold text-[#495057] lg:text-lg">UX/UI
+                        DESIGN</div>
+                    <div id="serv-text" class="text-base md:text-sm text-[#495057] lg:text-base">Lorem ipsum dolor, sit amet
+                        consectetur
                         adipisicing elit. Quae
                         dicta unde quia quo ipsa vero.
                     </div>
                 </div>
-                <div id="contain" class=" ml-2 mr-2 mt-4 text-center">
+                <div id="contain"
+                    class=" mt-8 text-center border border-[#EAF0FC] w-72 md:w-60 lg:w-96 rounded-md md:text-sm md:border-y-0 md:border-l-2 md:border-r-2 md:rounded-none md:mt-0 lg:border-x-2  mx-2 md:h-56">
                     <div id="serv-imgs" class="flex justify-center mt-4 mb-4"><img src="imgs/web dev.png" alt=""
-                            width="50"></div>
-                    <div id="serv-title" class="flex justify-center mb-4 font-bold text-[#495057]">Web Development</div>
-                    <div id="serv-text" class="text-base text-[#495057]">Lorem ipsum dolor sit amet, consectetur
+                            width="50" class="md:w-10 lg:w-12"></div>
+                    <div id="serv-title" class="flex justify-center mb-4 font-bold text-[#495057] lg:text-lg">Web
+                        Development</div>
+                    <div id="serv-text" class="text-base md:text-sm text-[#495057] lg:text-base px-5 ">Lorem ipsum dolor
+                        sit amet,
+                        consectetur
                         adipisicing elit.
                         Officia libero, doloribus assumenda
                         dolor in cumque?</div>
                 </div>
-                <div id="contain" class=" ml-2 mr-4 pt-4 text-center pl-5 border-l-2">
+                <div id="contain"
+                    class="  mt-8 text-center border border-[#EAF0FC] w-72 md:w-52 lg:w-80 rounded-md md:text-sm md:border-y-0 md:border-l-0 md:border-r-0 md:mt-0 mx-2 md:ml-4 md:h-56">
                     <div id="serv-imgs" class="flex justify-center mt-4 mb-4"><img src="imgs/mobile.png" alt=""
-                            width="50"></div>
-                    <div id="serv-title" class="flex justify-center mb-4 font-bold text-[#495057]">App design</div>
-                    <div id="serv-text" class="text-base text-[#495057]">Lorem ipsum dolor sit amet consectetur
+                            width="50" class="md:w-10 lg:w-12"></div>
+                    <div id="serv-title" class="flex justify-center mb-4 font-bold text-[#495057] lg:text-lg">App
+                        design</div>
+                    <div id="serv-text" class="text-base md:text-sm text-[#495057] lg:text-base">Lorem ipsum dolor sit amet
+                        consectetur
                         adipisicing elit. Minus
                         ut fugit eveniet enim aliquam
                         blanditiis?</div>
@@ -112,56 +123,6 @@
 
         </div>
     </section>
-
-    <style>
-        @media (max-width: 769px) {
-            #othertext {
-                font-size: 60px;
-            }
-
-            #text {
-                font-size: 30px
-            }
-
-            #home-img {
-                height: 950px;
-            }
-
-            #service-container {
-                display: flex;
-                justify-content: center;
-            }
-
-            #serv-content {
-
-                height: 200px;
-                width: 700px;
-                margin-top: 100px;
-
-            }
-
-            #serv-title {
-                font-size: small;
-                margin-top: -10px;
-            }
-
-            #serv-text {
-                font-size: smaller;
-                margin-top: -10px;
-            }
-
-            #serv-imgs {
-                width: 30px;
-                height: auto;
-                margin-top: 2px;
-            }
-
-            #contain img {
-                margin-left: 168px;
-            }}
-    </style>
-
-
 
 
 
