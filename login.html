@@ -1,25 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="IT solutions,Software development,Cloud computing,Cybersecurity services,
                                     IT consulting,Managed IT services,Web development,Mobile app development,Digital transformation,Data analytics,Network security,Enterprise solutions,Cloud migration,DevOps services,
                                     IT infrastructure management,Custom software solutions,Business technology consulting,Artificial intelligence (AI) solutions,
                                     Blockchain development,Tech support services">
-    <meta name="description" content="At Visionary Creations , we specialize in delivering innovative IT solutions to help businesses thrive in the digital era. From software development to cloud computing and cybersecurity, our expert team is dedicated to driving your business forward with cutting-edge technology and personalized services.">
+    <meta name="description"
+        content="At Visionary Creations , we specialize in delivering innovative IT solutions to help businesses thrive in the digital era. From software development to cloud computing and cybersecurity, our expert team is dedicated to driving your business forward with cutting-edge technology and personalized services.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="icon" href="/imgs/logo.png" type="image/png">
+    <title>Visionary Refont</title>
+    <link rel="icon" href="/imgs/logo.webp" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preload" as="font">
     <script src="tailwind.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
-    
     <style>
-        body{
+        body {
             font-family: 'Fira Sans', sans-serif;
         }
     </style>
 </head>
-<body>
+
+<body class="body-no-scroll ">
+
+    <style>
+        .body-no-scroll {
+            overflow: hidden;
+        }
+    </style>
+
+    <header class="z-20 px-3 lg:px-40 bg-white flex justify-between items-center w-full py-2 fixed">
+        <div class="img w-8 z-10">
+            <img src="imgs/logo.webp" class="w-10" alt="logo">
+        </div>
+
+        <nav>
+            <!-- Burger Menu Icon -->
+            <div class="nav-icon relative z-50 cursor-pointer lg:hidden">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+            </div>
+
+            <!-- Navigation Menu -->
+            <ul
+                class="navbar z-40 absolute bg-opacity-90 bg-black lg:bg-white justify-center top-0 h-screen right-0 flex items-center flex-col w-full list-none hidden lg:flex lg:static lg:h-fit lg:flex-row lg:items-center">
+                <li><a href="projet-complet.html"
+                        class="font-bold no-underline mb-2 px-4 inline-block lg:text-slate-950 text-white hover:text-rose-500 lg:mb-0">Home</a>
+                </li>
+
+                <li><a href="login.html"
+                        class="font-bold no-underline mb-2 px-4 inline-block lg:text-slate-950 text-white hover:text-rose-500 lg:mb-0">Log
+                        in</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
     <section class="relative min-h-screen flex items-center justify-center">
         <div class="absolute inset-0">
             <img src="imgs/header.webp" alt="background" class="w-full h-full object-cover">
@@ -40,17 +81,23 @@
             <!-- Login Form -->
             <form class="space-y-6">
                 <div>
-                    <input type="email" placeholder="Email" class="w-full px-4 py-2 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent" required>
+                    <input type="email" placeholder="Email"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent"
+                        required>
                 </div>
                 <div>
-                    <input type="password" minlength="8" placeholder="Password" class="w-full px-4 py-2 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent" required>
+                    <input type="password" minlength="8" placeholder="Password"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent"
+                        required>
                 </div>
                 <!--Checkbox -->
                 <div class="flex items-center">
-                    <input type="checkbox" id="remember" class="h-4 w-4 text-teal-600 focus:ring-teal-500 border-gray-300 rounded">
+                    <input type="checkbox" id="remember"
+                        class="h-4 w-4 text-teal-600 focus:ring-teal-500 border-gray-300 rounded">
                     <label for="remember" class="ml-2 block text-sm text-gray-900">Remember me</label>
                 </div>
-                <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2">
+                <button type="submit"
+                    class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2">
                     LOGIN
                 </button>
 
@@ -62,4 +109,5 @@
         </div>
     </section>
 </body>
+
 </html>

@@ -12,8 +12,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visionary Refont</title>
     <link rel="icon" href="/imgs/logo.webp" type="image/png">
+    <link rel="stylesheet" href="font awesome/webfonts/all.min.css">
     <link rel="preload" as="font">
     <script src="tailwind.js"></script>
+    <script src="file.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -69,8 +71,9 @@
                         class="font-bold no-underline mb-2 px-4 inline-block lg:text-slate-950 text-white hover:text-rose-500 lg:mb-0">Contact</a>
                 </li>
                 <li><a href="login.html"
-                    class="font-bold no-underline mb-2 px-4 inline-block lg:text-slate-950 text-white hover:text-rose-500 lg:mb-0">Log in</a>
-            </li>
+                        class="font-bold no-underline mb-2 px-4 inline-block lg:text-slate-950 text-white hover:text-rose-500 lg:mb-0">Log
+                        in</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -92,12 +95,14 @@
             </div>
 
             <div class="mt-20  text-white space-x-1 flex justify-center h-12 md:space-x-4">
-                <button href="#"
-                    class="border rounded-full text-base w-40 lg:text-lg lg:w-44 border-[#FF214F] bg-[#FF214F] px-8 py-3 hover:bg-transparent">Our
-                    Services</button>
-                <button href="#"
-                    class="border rounded-full text-base w-40 lg:text-lg lg:w-44 border-[#99677C] px-8 py-3">Contact
-                    Us</button>
+                <button href="#service"
+                    class="border rounded-full text-base w-40 lg:text-lg lg:w-44 border-[#FF214F] bg-[#FF214F] px-8 py-3 hover:bg-transparent"><a
+                        href="#service">Our
+                        Services</a></button>
+                <button href="#contact"
+                    class="border rounded-full text-base w-40 lg:text-lg lg:w-44 border-[#99677C] px-8 py-3"><a
+                        href="#contact">Contact
+                        Us</a></button>
             </div>
         </div>
 
@@ -150,9 +155,9 @@
     </section>
 
 
-    <script src="BurgerMenu.js"></script>
+    <script src="BurgerMenu.js" defer></script>
 
-    <script src="java.js"></script>
+    <script src="java.js" defer></script>
 
 
 
@@ -712,7 +717,6 @@
         </div>
 
 
-        <script src="script.js"></script>
     </section>
 
 
@@ -1516,7 +1520,7 @@
 
         </div>
 
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
 
     </section>
 
@@ -1630,7 +1634,7 @@
         style="background-image: url('imgs/section.webp');">
         <div class="absolute inset-0 bg-[#212529] opacity-95"></div>
         <!-- This is the overlay for darkening the image -->
-        <div class="relative container mx-auto flex justify-between flex-wrap" >
+        <div class="relative container mx-auto flex justify-between flex-wrap">
             <!-- About Us -->
             <div class="w-full md:w-1/3 mb-6 md:mb-0">
                 <h2 class="text-white font-bold mb-4 uppercase border-b w-7/12 border-b-slate-400 pb-4">About Us</h2>
