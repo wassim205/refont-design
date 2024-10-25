@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visionary Refont</title>
     <link rel="icon" href="/imgs/logo.webp" type="image/png">
-
+    <link rel="preload" as="font">
     <script src="tailwind.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -32,7 +32,7 @@
 
     <header class="z-20 px-3 lg:px-40 bg-white flex justify-between items-center w-full py-2 fixed">
         <div class="img w-8 z-10">
-            <img src="imgs/logo.webp" class="max-w-full" alt="logo">
+            <img src="imgs/logo.webp" class="w-10" alt="logo">
         </div>
 
         <nav>
@@ -1630,7 +1630,7 @@
         style="background-image: url('imgs/section.webp');">
         <div class="absolute inset-0 bg-[#212529] opacity-95"></div>
         <!-- This is the overlay for darkening the image -->
-        <div class="relative container mx-auto flex justify-between flex-wrap">
+        <div class="relative container mx-auto flex justify-between flex-wrap" >
             <!-- About Us -->
             <div class="w-full md:w-1/3 mb-6 md:mb-0">
                 <h2 class="text-white font-bold mb-4 uppercase border-b w-7/12 border-b-slate-400 pb-4">About Us</h2>
